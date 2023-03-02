@@ -50,7 +50,7 @@ body {
 --logo:hsl(236, 33%, 92%);
 --border:hsl(237, 14%, 26%);
 
-  min-height: 100vh;
+  min-height: 100%;
   font-family: var(--ff);
   font-size: 1.125rem;
   color: var(--DarkText);
@@ -86,6 +86,7 @@ body.light-mode {
 
 .wrapper {
   position: relative;
+  min-height:100%;
 }
 /* container */
 .container {
@@ -288,6 +289,9 @@ form input::placeholder {
   }
 }
 @media (min-width: 376px){
+  .wrapper {
+    height:100vh;
+  }
   .filter span {
     font-size: 0.8rem;
   }
