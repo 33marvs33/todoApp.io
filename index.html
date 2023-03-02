@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="data">
+    <span id="error">No datas yet...</span>
+  </div>
+  <div class="wrapper">
+    <picture class="background">
+      <source srcset="/images/bg-desktop-dark.jpg" media="(min-width:376px)">
+    <img src="/images/bg-mobile-dark.jpg" alt="mobile background">
+  </picture>
+    <div class="container">
+    <header class="flex">
+      <h1 class="logo">TODO</h1>
+      <button class="btn">
+        <img class="sun" src="/images/icon-sun.svg" alt="sun">
+
+        <img class="moon hidden" src="/images/icon-moon.svg" alt="moon">
+
+      </button>
+    </header>
+
+    <main>
+      <form>
+        <span class="icons">
+          <!-- <img src="/images/icon-check.svg" alt="check"> -->
+        </span>
+        <input class="todo-input" type="text" placeholder="Create a new todo...">
+        <input type="submit"></input>
+      </form>
+      <div class="todos">
+        <ul class="todos-container">
+    <!-- code here javascript -->
+
+        </ul>
+        <div class="all-todos">
+          <p><span class="remaining">0</span> items left</p>
+          <div class="filter">
+            <span class="all">All</span>
+            <span class="active">Active</span>
+            <span class="completed">Completed</span>
+          </div>
+          <p class="clear">Clear Completed</p>
+        </div>
+      </div>
+      
+    </main>
+
+    <div class="dragpara">
+      <p>Drag and drop to reorder list</p>
+    </div>
+  </div>
+  </div>
+  
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
