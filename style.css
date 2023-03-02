@@ -50,7 +50,7 @@ body {
 --logo:hsl(236, 33%, 92%);
 --border:hsl(237, 14%, 26%);
 
-  min-height: 100%;
+  min-height: 100vh;
   font-family: var(--ff);
   font-size: 1.125rem;
   color: var(--DarkText);
@@ -86,7 +86,8 @@ body.light-mode {
 
 .wrapper {
   position: relative;
-  min-height:100%;
+  min-height:100vh;
+  overflow:scroll;
 }
 /* container */
 .container {
