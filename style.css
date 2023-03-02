@@ -292,6 +292,7 @@ form input::placeholder {
 @media (min-width: 401px){
   .wrapper {
     height:100vh;
+    overflow: hidden;
   }
   .filter span {
     font-size: 0.8rem;
