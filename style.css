@@ -155,7 +155,7 @@ form input::placeholder {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 436px;
+  height: 400px;
 }
 .todos-container {
   overflow-y: scroll;
