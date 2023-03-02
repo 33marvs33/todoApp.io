@@ -58,11 +58,11 @@ function display(data) {
     taskContainer.innerHTML += `
         <li class="todo ${val.id}" id="drag" draggable="true">
         <span class="icon">
-        <img class="check hidden" src="/images/icon-check.svg" alt="check">
+        <img class="check hidden" src="icon-check.svg" alt="check">
         </span>
         <input class="input-task" type="text" value="${val.value}" readonly="true">
         <span class="delete">
-        <img  src="/images/icon-cross.svg" alt="">
+        <img  src="icon-cross.svg" alt="cross-icon">
         </span>
     </li> `;
 
@@ -196,8 +196,8 @@ sunIcon.addEventListener("click", () => {
   const bodyel = document.body;
   bodyel.classList.add("light-mode");
   if (bodyel.classList.contains("light-mode")) {
-    source.setAttribute("srcset", "/images/bg-desktop-light.jpg");
-    sourceImg.setAttribute("src", "/images/bg-mobile-light.jpg");
+    source.setAttribute("srcset", "bg-desktop-light.jpg");
+    sourceImg.setAttribute("src", "bg-mobile-light.jpg");
     const moonIcon = document.querySelector(".moon");
     sunIcon.classList.add("hidden");
     moonIcon.classList.remove("hidden");
@@ -205,8 +205,8 @@ sunIcon.addEventListener("click", () => {
       bodyel.classList.remove("light-mode");
       moonIcon.classList.add("hidden");
       sunIcon.classList.remove("hidden");
-      source.setAttribute("srcset", "/images/bg-desktop-dark.jpg");
-      sourceImg.setAttribute("src", "/images/bg-mobile-dark.jpg");
+      source.setAttribute("srcset", "bg-desktop-dark.jpg");
+      sourceImg.setAttribute("src", "bg-mobile-dark.jpg");
     });
   }
 });
