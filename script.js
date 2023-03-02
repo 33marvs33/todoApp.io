@@ -175,11 +175,11 @@ allTask.addEventListener("click", () => {
   display(DATAS);
 });
 
-//function to delete all tasks//
+//function to delete all completed tasks//
 clearTask.addEventListener("click", () => {
-  DATAS.length = 0;
-  localStorage.setItem("task", JSON.stringify(DATAS));
-  display(DATAS);
+  DATAS = DATAS.filter(key => key.completed !== true);
+  localStorage.setItem('task', JSON.stringify(DATAS));
+  display(DATAS)
 });
 
 //function to update the items//
